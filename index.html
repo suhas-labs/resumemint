@@ -14,7 +14,7 @@
   <header class="topbar">
     <a class="brand" href="#" aria-label="ResumeMint home"><span class="brand-mark">R</span><span>ResumeMint</span></a>
     <nav aria-label="Primary navigation">
-      <a href="#builder">Builder</a><a href="#checker">ATS checker</a><a href="#how">How it works</a>
+      <a href="#builder">Builder</a><a href="#checker">ATS checker</a><a href="#file-audit">Hidden text finder</a>
     </nav>
     <a class="ghost-btn" href="#builder">Build my resume <span>→</span></a>
   </header>
@@ -102,10 +102,20 @@
       </div>
     </section>
 
+    <section id="file-audit" class="audit-section">
+      <div class="audit-heading"><div><span class="kicker">PRIVATE DOCUMENT FORENSICS</span><h2>Find hidden text before an ATS does.</h2></div><p>White keywords, invisible text, microscopic fonts, and zero-opacity content can trigger fraud filters or get an application rejected. ResumeMint inspects the file locally and explains every risk.</p></div>
+      <div class="audit-grid">
+        <div class="upload-card"><input id="resumeFile" type="file" accept=".pdf,.docx,.txt" hidden /><label for="resumeFile" class="drop-zone" id="dropZone"><span class="upload-icon">⇧</span><b>Drop your resume here</b><small>PDF, DOCX or TXT · maximum 10 MB</small><em>Choose file</em></label><div class="privacy-strip"><span>🔒</span><div><b>Nothing is uploaded</b><small>The scan runs entirely inside your browser.</small></div></div></div>
+        <div class="audit-report" id="auditReport"><div class="empty-report"><div class="radar">◎</div><h3>Your document audit will appear here</h3><p>We inspect formatting signals that ordinary keyword checkers miss.</p></div></div>
+      </div>
+      <div class="audit-checks"><article><span>◉</span><div><b>Invisible text</b><small>PDF rendering mode and hidden DOCX runs</small></div></article><article><span>◐</span><div><b>White-on-white content</b><small>Text concealed from a human reviewer</small></div></article><article><span>↘</span><div><b>Microscopic fonts</b><small>Unusually small keyword text</small></div></article><article><span>≋</span><div><b>Keyword stuffing</b><small>Unnatural repetition and density</small></div></article></div>
+    </section>
+
     <section id="how" class="how-section"><span class="kicker">WHY RESUMEMINT</span><h2>Free should still feel excellent.</h2><div class="feature-grid"><article><span>✦</span><h3>Built for ATS systems</h3><p>Single-column layouts, standard headings, selectable text, and predictable reading order.</p></article><article><span>◌</span><h3>Private by design</h3><p>Your resume is stored locally in your browser. We don’t need an account or your personal data.</p></article><article><span>↗</span><h3>Ready to export</h3><p>Print a crisp PDF without watermarks, locked templates, or surprise checkout screens.</p></article></div></section>
   </main>
 
   <footer><div class="brand"><span class="brand-mark">R</span><span>ResumeMint</span></div><p>Good work deserves a fair chance.</p><span>Free forever · Built with care</span></footer>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
